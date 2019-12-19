@@ -1,0 +1,11 @@
+<div class="menu">
+	<ul>
+		<li *ngFor="let menu of menus">
+			<a *ngIf=' menu == "home"; else otherMenu' routerLink="/">{{ this.menu }}</a>
+			<ng-template #otherMenu>
+				<a routerLink="{{ this.menu }}">{{ this.menu }}</a>
+			</ng-template>
+		</li>
+	</ul>
+</div>
+ 

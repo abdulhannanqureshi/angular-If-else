@@ -1,0 +1,77 @@
+/*User style S
+-------------------------*/
+.user-details{
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.user-details li{
+	box-sizing: border-box;
+    padding: 0 20px 12px;
+    border-right: solid 1px #e4e3e7;
+    margin: 0 0 30px;
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user-details li:nth-of-type(3n){
+	border:0;
+}
+.user-details img{
+	width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 160px;
+    box-shadow: 0 0 5px #464141;
+    padding: 5px;
+}
+.user-details h2{
+	font-size: 24px;
+    color: #1d8ceb;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 8px 0 0;
+}
+.user-details p{
+	font-size: 16px;
+    color: #1d8ceb;
+    font-weight: 500;
+    padding: 2px 0 0;
+}
+.use-details{
+	padding-left: 25px;
+}
+.form-wrapper{
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-wrapper input{
+    width: 100%;
+    height: 32px;
+    padding: 2px 22px;
+    border-radius: 4px;
+    margin: 0 0 20px;
+    box-shadow: none;
+    border: solid 1px #1d8ceb;
+    color: #1d8ceb;
+    box-sizing: border-box;
+}
+.form-wrapper h2{
+    text-align: center;
+    font-size: 24px;
+    color: #1d8ceb;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+    margin: 0 0 12px;
+}
+.form-wrapper .common-btn{
+    background: transparent;
+    min-width: 220px;
+    width: 220px;
+    display: block;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}

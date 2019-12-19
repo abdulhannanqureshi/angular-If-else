@@ -1,0 +1,14 @@
+.menu ul{
+	text-align: center;
+}
+.menu ul li {
+	margin: 0 6px;
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}

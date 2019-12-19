@@ -1,0 +1,77 @@
+<!-- if else statement -->
+<!-- negated variable to achieve "if not" -->
+
+<div *ngIf="!isLoggedIn">
+	<h4>if</h4>
+ 	Please login, friend.
+	<hr>
+</div>
+
+<!-- logic && operator -->
+<div *ngIf="isLoggedIn && !isNewUser">
+	<h4>if with And opreater</h4>
+	&#38; Welcome back, friend. 
+	<hr>
+</div>
+
+<!-- logic OR operator -->
+<div *ngIf="isLoggedIn || !isNewUser">
+  <h4>if with Or Opreater</h4>
+  Welcome!
+  <hr>
+</div>
+
+<!-- if with else -->
+<div *ngIf="!isLoggedIn; else loggedOut">
+	<h4>if with else</h4>
+		If Run
+	<hr>
+</div>
+<ng-template #loggedOut>
+	<h4>if with else</h4>
+		Else Run
+	<hr>
+</ng-template>
+         
+<!-- Different Syntax With ngifelse-->		
+<ng-template [ngIf]="isLoggedIn">
+  <h4>Different Syntax</h4>
+  <div>
+    Welcome back, friend.
+  </div>
+  <hr>
+</ng-template>
+
+<ng-template [ngIf]="!isLoggedIn" [ngIfElse]="loggedOutDif">
+	<h4>Different Syntax with Else:-  [ngIf] [ngIfElse] </h4>
+	<div>
+		ngIf Run
+	</div>
+	<hr>
+</ng-template>
+<ng-template #loggedOutDif>
+	<h4>Different Syntax</h4>
+	<div>
+		ngIfElse Run
+	</div>
+	<hr>
+</ng-template>
+
+<!-- if else with then-->		
+<ng-container *ngIf="!isLoggedIn; then loggedIn; else loggedOutDifTwo">
+  <h4>if else with then</h4>
+</ng-container>
+
+<ng-template #loggedIn>
+	<h4>if else with then</h4>
+  <div>
+    Then Run
+  </div>
+</ng-template>
+
+<ng-template #loggedOutDifTwo>
+	<h4>if else with then</h4>
+  <div>
+   Else Run
+  </div>
+</ng-template>
